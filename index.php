@@ -1,3 +1,6 @@
+<?php 
+    require_once 'autoload.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="lf-loginForm">
+    <!-- <div class="lf-loginForm">
         <div class="lf-title"><span>Login Form</span></div>
         <form action="#" method="post">
             <div class="lf-input">
@@ -19,12 +22,12 @@
                 <i class="fas fa-lock"></i>
                 <input type="password" name="password" placeholder="Password" autocomplete="off">
             </div>
-            <div class="lf-form_text"><!-- <span>Wrong info.</span> --> <a href="#">Forget Password?</a></div>
+            <div class="lf-form_text"><!-- <span>Wrong info.</span> -- <a href="#">Forget Password?</a></div>
             <div class="lf-input">
                 <input class="lf-submit_btn" type="submit" value="Login">
             </div>
             <div class="lf-form_text">Not a member? <a href="./signup.html">Sign Up</a></div>
         </form>
-    </div>
+    </div> -->
 </body>
 </html>
