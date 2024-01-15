@@ -1,5 +1,7 @@
 <?php 
     require_once 'autoload.php';
+
+    $form = new Form();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +13,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <?php 
+        echo $form->render();
+    ?>
     <!-- <div class="lf-loginForm">
         <div class="lf-title"><span>Login Form</span></div>
         <form action="#" method="post">
