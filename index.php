@@ -2,8 +2,8 @@
     require_once 'autoload.php';
 
     $form = new Form();
-    $form->addElement(new TextInput( 'fname ', 'Your First name'));    
-    $form->addElement(new TextInput( 'lname ', 'Last Name'));
+    $form->addElement(new TextInput( 'username ', 'Your First name'));    
+    $form->addElement(new PasswordInput('password', 'Enter Password', '', 'fas fa-lock'));
 
     // $form = new Form( '#', 'post');
 ?>
