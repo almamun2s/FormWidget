@@ -2,7 +2,9 @@
     require_once 'autoload.php';
 
     $form = new Form();
-    $form->addElement(new TextInput( 'fname '));
+    $form->addElement(new TextInput( 'fname ', 'Your First name'));    
+    $form->addElement(new TextInput( 'lname ', 'Last Name'));
+
     // $form = new Form( '#', 'post');
 ?>
 <!DOCTYPE html>
@@ -10,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+    <title>Form Widget</title>
     <link rel="stylesheet" href="icon/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,7 +20,6 @@
     <?php 
         echo $form->render();
     ?>
-    <p>Hello</p>
     <!-- <div class="lf-loginForm">
         <div class="lf-title"><span>Login Form</span></div>
         <form action="#" method="post">
