@@ -18,6 +18,7 @@
     <?php 
         echo $form->render();
     ?>
+    <p>Hello</p>
     <!-- <div class="lf-loginForm">
         <div class="lf-title"><span>Login Form</span></div>
         <form action="#" method="post">
