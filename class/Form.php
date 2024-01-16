@@ -3,13 +3,15 @@
 class Form extends HtmlElement{
     protected string $action;
     protected string $method;
-    protected $title;
+    protected string $title;
+    protected string $submitValue;
 
-    public function __construct($action = '#', $method = 'get', $title = 'Form Title')
+    public function __construct(string $action = '#', string $method = 'get', string $title = 'Form Title', string $submitValue = 'Submit')
     {
         $this->action = $action;
         $this->method = $method;
         $this->title = $title;
+        $this->submitValue = $submitValue;
     }
 
     protected array $elements = [];
@@ -41,11 +43,14 @@ class Form extends HtmlElement{
             <div class="lf-title"><span>%s</span></div>
             <form action="%s" method="%s">
                 %s
+                <div class="lf-input">
+                    <input class="lf-submit_btn" type="submit" value="%s">
+                </div>
                 <div class="lf-form_text">Not a member? <a href="./signup.html">Sign Up</a></div>
             </form>
         </div>
         ',
-        $this->title, $this->action, $this->method, $content
+        $this->title, $this->action, $this->method, $content, $this->submitValue
         );
     }
 }
