@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * This class is for making Base Input of all Input Elements
+ */
 class BaseInput{
     protected string $name;
     protected string $label;
