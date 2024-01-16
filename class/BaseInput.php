@@ -1,9 +1,11 @@
 <?php
 
+use HtmlElement;
+
 /**
  * This class is for making Base Input of all Input Elements
  */
-class BaseInput{
+abstract class BaseInput extends HtmlElement{
     protected string $name;
     protected string $label;
     protected string $value;
