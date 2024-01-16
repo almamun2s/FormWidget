@@ -2,6 +2,7 @@
     require_once 'autoload.php';
 
     $form = new Form();
+    // $form = new Form( '#', 'post');
 ?>
 <!DOCTYPE html>
 <html lang="en">
